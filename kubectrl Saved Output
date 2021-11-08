@@ -1,0 +1,513 @@
+Last login: Mon Oct 25 22:53:15 on console
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Apples-MacBook:~ apple$ 
+Apples-MacBook:~ apple$ 
+Apples-MacBook:~ apple$ brew install kubectl 
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core and homebrew/cask).
+==> New Formulae
+all-repos           datafusion          ld-find-code-refs   node@16
+charmcraft          git-svn             libsigrok           nsh
+clang-format@11     gitlab-ci-local     libsigrokdecode     sextractor
+cloudiscovery       go-critic           mdzk                uuu
+copier              iputils             ncnn
+==> Updated Formulae
+Updated 3365 formulae.
+==> New Casks
+blender-benchmark   live-home-3d        otto-matic          topnotch
+bugdom              megazeux            scatter             trackerzapper
+fmail               mightymike          sonic3air
+gitdock             mural               tev
+keycombiner         nanosaur            threema
+==> Updated Casks
+Updated 568 casks.
+==> Deleted Casks
+anzeigenchef               collabshot                 tuntap
+archi                      cytoscape                  upic
+bearychat                  fritzing                   zipcleaner
+blooo                      refined-github-safari
+breakaway                  silverlight
+
+==> Downloading https://ghcr.io/v2/homebrew/core/kubernetes-cli/manifests/1.22.2
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:2c7
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Pouring kubernetes-cli--1.22.2.big_sur.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/kubectl
+Target /usr/local/bin/kubectl
+already exists. You may want to remove it:
+  rm '/usr/local/bin/kubectl'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite kubernetes-cli
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run kubernetes-cli
+
+Possible conflicting files are:
+/usr/local/bin/kubectl -> /Applications/Docker.app/Contents/Resources/bin/kubectl
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> Summary
+🍺  /usr/local/Cellar/kubernetes-cli/1.22.2: 226 files, 57.5MB
+Apples-MacBook:~ apple$ 
+Apples-MacBook:~ apple$ 
+Apples-MacBook:~ apple$ kubectl version --client
+Client Version: version.Info{Major:"1", Minor:"21", GitVersion:"v1.21.5", GitCommit:"aea7bbadd2fc0cd689de94a54e5b7b758869d691", GitTreeState:"clean", BuildDate:"2021-09-15T21:10:45Z", GoVersion:"go1.16.8", Compiler:"gc", Platform:"darwin/amd64"}
+Apples-MacBook:~ apple$ 
+Apples-MacBook:~ apple$ 
+Apples-MacBook:~ apple$ brew install hyperkit
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core and homebrew/cask).
+==> New Formulae
+fnlfmt                                                         spdx-sbom-generator
+==> Updated Formulae
+Updated 850 formulae.
+==> New Casks
+inso
+==> Updated Casks
+Updated 104 casks.
+==> Deleted Casks
+eudic-es                                                       videobox
+
+==> Downloading https://ghcr.io/v2/homebrew/core/libev/manifests/4.33
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libev/blobs/sha256:95ddf4b85924a6a10d4a88b6eb52616fa8375e745c99d0752618d5bb
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:95ddf4b85924a6a10d4a88b6eb52616fa8375e7
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/hyperkit/manifests/0.20200908
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/hyperkit/blobs/sha256:26a203b17733ff5166d8c31069e3ecd5af15c74448a51d8b68268
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:26a203b17733ff5166d8c31069e3ecd5af15c74
+######################################################################## 100.0%
+==> Installing dependencies for hyperkit: libev
+==> Installing hyperkit dependency: libev
+==> Pouring libev--4.33.big_sur.bottle.tar.gz
+🍺  /usr/local/Cellar/libev/4.33: 12 files, 484.0KB
+==> Installing hyperkit
+==> Pouring hyperkit--0.20200908.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/hyperkit/0.20200908: 5 files, 4.3MB
+Apples-MacBook:~ apple$ brew install minicube
+Warning: No available formula or cask with the name "minicube". Did you mean minikube?
+==> Searching for similarly named formulae...
+This similarly named formula was found:
+minikube
+To install it, run:
+  brew install minikube
+==> Searching for a previously deleted formula (in the last month)...
+Error: No previously deleted formula found.
+==> Searching taps on GitHub...
+Error: No formulae found in taps.
+Apples-MacBook:~ apple$ cubectl
+-bash: cubectl: command not found
+Apples-MacBook:~ apple$ brew install minicube
+Warning: No available formula or cask with the name "minicube". Did you mean minikube?
+==> Searching for similarly named formulae...
+This similarly named formula was found:
+minikube
+To install it, run:
+  brew install minikube
+==> Searching for a previously deleted formula (in the last month)...
+Error: No previously deleted formula found.
+==> Searching taps on GitHub...
+Error: No formulae found in taps.
+Apples-MacBook:~ apple$ brew install minikube
+==> Downloading https://ghcr.io/v2/homebrew/core/minikube/manifests/1.23.2
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/minikube/blobs/sha256:0f123e76f821fa427496a1d73551cdcd5c4b7cc74c3d6c8fb45f6
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:0f123e76f821fa427496a1d73551cdcd5c4b7cc
+######################################################################## 100.0%
+==> Pouring minikube--1.23.2.big_sur.bottle.tar.gz
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> Summary
+🍺  /usr/local/Cellar/minikube/1.23.2: 9 files, 68.7MB
+Apples-MacBook:~ apple$ minikube
+minikube provisions and manages local Kubernetes clusters optimized for development workflows.
+
+Basic Commands:
+  start          Starts a local Kubernetes cluster
+  status         Gets the status of a local Kubernetes cluster
+  stop           Stops a running local Kubernetes cluster
+  delete         Deletes a local Kubernetes cluster
+  dashboard      Access the Kubernetes dashboard running within the minikube cluster
+  pause          pause Kubernetes
+  unpause        unpause Kubernetes
+
+Images Commands:
+  docker-env     Configure environment to use minikube's Docker daemon
+  podman-env     Configure environment to use minikube's Podman service
+  cache          Add, delete, or push a local image into minikube
+  image          Manage images
+
+Configuration and Management Commands:
+  addons         Enable or disable a minikube addon
+  config         Modify persistent configuration values
+  profile        Get or list the current profiles (clusters)
+  update-context Update kubeconfig in case of an IP or port change
+
+Networking and Connectivity Commands:
+  service        Returns a URL to connect to a service
+  tunnel         Connect to LoadBalancer services
+
+Advanced Commands:
+  mount          Mounts the specified directory into minikube
+  ssh            Log into the minikube environment (for debugging)
+  kubectl        Run a kubectl binary matching the cluster version
+  node           Add, remove, or list additional nodes
+  cp             Copy the specified file into minikube
+
+Troubleshooting Commands:
+  ssh-key        Retrieve the ssh identity key path of the specified node
+  ssh-host       Retrieve the ssh host key of the specified node
+  ip             Retrieves the IP address of the specified node
+  logs           Returns logs to debug a local Kubernetes cluster
+  update-check   Print current and latest version number
+  version        Print the version of minikube
+
+Other Commands:
+  completion     Generate command completion for a shell
+
+Use "minikube <command> --help" for more information about a given command.
+Apples-MacBook:~ apple$ cubectl
+-bash: cubectl: command not found
+Apples-MacBook:~ apple$ kubectl
+kubectl controls the Kubernetes cluster manager.
+
+ Find more information at: https://kubernetes.io/docs/reference/kubectl/overview/
+
+Basic Commands (Beginner):
+  create        Create a resource from a file or from stdin.
+  expose        Take a replication controller, service, deployment or pod and expose it as a new Kubernetes Service
+  run           Run a particular image on the cluster
+  set           Set specific features on objects
+
+Basic Commands (Intermediate):
+  explain       Documentation of resources
+  get           Display one or many resources
+  edit          Edit a resource on the server
+  delete        Delete resources by filenames, stdin, resources and names, or by resources and label selector
+
+Deploy Commands:
+  rollout       Manage the rollout of a resource
+  scale         Set a new size for a Deployment, ReplicaSet or Replication Controller
+  autoscale     Auto-scale a Deployment, ReplicaSet, StatefulSet, or ReplicationController
+
+Cluster Management Commands:
+  certificate   Modify certificate resources.
+  cluster-info  Display cluster info
+  top           Display Resource (CPU/Memory) usage.
+  cordon        Mark node as unschedulable
+  uncordon      Mark node as schedulable
+  drain         Drain node in preparation for maintenance
+  taint         Update the taints on one or more nodes
+
+Troubleshooting and Debugging Commands:
+  describe      Show details of a specific resource or group of resources
+  logs          Print the logs for a container in a pod
+  attach        Attach to a running container
+  exec          Execute a command in a container
+  port-forward  Forward one or more local ports to a pod
+  proxy         Run a proxy to the Kubernetes API server
+  cp            Copy files and directories to and from containers.
+  auth          Inspect authorization
+  debug         Create debugging sessions for troubleshooting workloads and nodes
+
+Advanced Commands:
+  diff          Diff live version against would-be applied version
+  apply         Apply a configuration to a resource by filename or stdin
+  patch         Update field(s) of a resource
+  replace       Replace a resource by filename or stdin
+  wait          Experimental: Wait for a specific condition on one or many resources.
+  kustomize     Build a kustomization target from a directory or URL.
+
+Settings Commands:
+  label         Update the labels on a resource
+  annotate      Update the annotations on a resource
+  completion    Output shell completion code for the specified shell (bash or zsh)
+
+Other Commands:
+  api-resources Print the supported API resources on the server
+  api-versions  Print the supported API versions on the server, in the form of "group/version"
+  config        Modify kubeconfig files
+  plugin        Provides utilities for interacting with plugins.
+  version       Print the client and server version information
+
+Usage:
+  kubectl [flags] [options]
+
+Use "kubectl <command> --help" for more information about a given command.
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+Apples-MacBook:~ apple$ minikube start --vm-driver=hyperkit
+😄  minikube v1.23.2 on Darwin 11.6
+✨  Using the hyperkit driver based on user configuration
+💾  Downloading driver docker-machine-driver-hyperkit:
+    > docker-machine-driver-hyper...: 65 B / 65 B [----------] 100.00% ? p/s 0s
+    > docker-machine-driver-hyper...: 10.53 MiB / 10.53 MiB  100.00% 1.89 MiB p
+🔑  The 'hyperkit' driver requires elevated permissions. The following commands will be executed:
+
+    $ sudo chown root:wheel /Users/apple/.minikube/bin/docker-machine-driver-hyperkit 
+    $ sudo chmod u+s /Users/apple/.minikube/bin/docker-machine-driver-hyperkit 
+
+
+Password:
+💿  Downloading VM boot image ...
+    > minikube-v1.23.1.iso.sha256: 65 B / 65 B [-------------] 100.00% ? p/s 0s
+    > minikube-v1.23.1.iso: 225.22 MiB / 225.22 MiB [ 100.00% 20.33 MiB p/s 11s
+👍  Starting control plane node minikube in cluster minikube
+💾  Downloading Kubernetes v1.22.2 preload ...
+    > preloaded-images-k8s-v13-v1...: 511.69 MiB / 511.69 MiB  100.00% 18.72 Mi
+🔥  Creating hyperkit VM (CPUs=2, Memory=2200MB, Disk=20000MB) ...
+🐳  Preparing Kubernetes v1.22.2 on Docker 20.10.8 ...
+    ▪ Generating certificates and keys ...
+    ▪ Booting up control plane ...
+    ▪ Configuring RBAC rules ...
+🔎  Verifying Kubernetes components...
+    ▪ Using image gcr.io/k8s-minikube/storage-provisioner:v5
+🌟  Enabled addons: storage-provisioner, default-storageclass
+🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
+Apples-MacBook:~ apple$ kubectl getnodes
+Error: unknown command "getnodes" for "kubectl"
+Run 'kubectl --help' for usage.
+Apples-MacBook:~ apple$ kubectl getnodes
+Error: unknown command "getnodes" for "kubectl"
+Run 'kubectl --help' for usage.
+Apples-MacBook:~ apple$ 
+Apples-MacBook:~ apple$ kubectl get nodes
+NAME       STATUS   ROLES                  AGE     VERSION
+minikube   Ready    control-plane,master   2m54s   v1.22.2
+Apples-MacBook:~ apple$ minikube status
+minikube
+type: Control Plane
+host: Running
+kubelet: Running
+apiserver: Running
+kubeconfig: Configured
+
+Apples-MacBook:~ apple$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"21", GitVersion:"v1.21.5", GitCommit:"aea7bbadd2fc0cd689de94a54e5b7b758869d691", GitTreeState:"clean", BuildDate:"2021-09-15T21:10:45Z", GoVersion:"go1.16.8", Compiler:"gc", Platform:"darwin/amd64"}
+Server Version: version.Info{Major:"1", Minor:"22", GitVersion:"v1.22.2", GitCommit:"8b5a19147530eaac9476b0ab82980b4088bbc1b2", GitTreeState:"clean", BuildDate:"2021-09-15T21:32:41Z", GoVersion:"go1.16.8", Compiler:"gc", Platform:"linux/amd64"}
+Apples-MacBook:~ apple$ kubectl get services
+NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   71m
+Apples-MacBook:~ apple$ kubectl create deployment nginx-depl --image=ninnx
+deployment.apps/nginx-depl created
+Apples-MacBook:~ apple$ kubectl get deployment
+NAME         READY   UP-TO-DATE   AVAILABLE   AGE
+nginx-depl   0/1     1            0           61s
+Apples-MacBook:~ apple$ kubectl get pod
+NAME                          READY   STATUS             RESTARTS   AGE
+nginx-depl-86b6cbfcbd-xgpkx   0/1     ImagePullBackOff   0          5m2s
+Apples-MacBook:~ apple$ kubectl get replicaset
+NAME                    DESIRED   CURRENT   READY   AGE
+nginx-depl-86b6cbfcbd   1         1         0       6m4s
+Apples-MacBook:~ apple$ 
+Apples-MacBook:~ apple$ kubectl edit deploymen nginx-depl
+error: the server doesn't have a resource type "deploymen"
+Apples-MacBook:~ apple$ kubectl edit deployment nginx-depl
+
+[No write since last change]
+
+Press ENTER or type command to continue
+error: there was a problem with the editor "vi"
+Apples-MacBook:~ apple$ kubectl get pod
+NAME                          READY   STATUS             RESTARTS   AGE
+nginx-depl-86b6cbfcbd-xgpkx   0/1     ImagePullBackOff   0          28m
+Apples-MacBook:~ apple$ kubectl logs
+error: expected 'logs [-f] [-p] (POD | TYPE/NAME) [-c CONTAINER]'.
+POD or TYPE/NAME is a required argument for the logs command
+See 'kubectl logs -h' for help and examples
+Apples-MacBook:~ apple$ kubectl create deployment mongo-depl --image=mongo
+deployment.apps/mongo-depl created
+Apples-MacBook:~ apple$ kubectl get pod
+NAME                          READY   STATUS              RESTARTS   AGE
+mongo-depl-5fd6b7d4b4-dxbfx   0/1     ContainerCreating   0          18s
+nginx-depl-86b6cbfcbd-xgpkx   0/1     ImagePullBackOff    0          32m
+Apples-MacBook:~ apple$ kubectl describe pod
+Name:         mongo-depl-5fd6b7d4b4-dxbfx
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.64.2
+Start Time:   Mon, 01 Nov 2021 23:29:34 +0300
+Labels:       app=mongo-depl
+              pod-template-hash=5fd6b7d4b4
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.4
+IPs:
+  IP:           172.17.0.4
+Controlled By:  ReplicaSet/mongo-depl-5fd6b7d4b4
+Containers:
+  mongo:
+    Container ID:   docker://68b990ecf7b5d957117d374af2c1d21d04b6b0b2f7a6225749d7371834d49fee
+    Image:          mongo
+    Image ID:       docker-pullable://mongo@sha256:07212fb304ea36b8c5a9e5694527f16deeb0b99f87fc60162dc15ab260bf8a2a
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Mon, 01 Nov 2021 23:30:37 +0300
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qk8gt (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-qk8gt:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  87s   default-scheduler  Successfully assigned default/mongo-depl-5fd6b7d4b4-dxbfx to minikube
+  Normal  Pulling    85s   kubelet            Pulling image "mongo"
+  Normal  Pulled     25s   kubelet            Successfully pulled image "mongo" in 1m0.006719709s
+  Normal  Created    25s   kubelet            Created container mongo
+  Normal  Started    24s   kubelet            Started container mongo
+
+
+Name:         nginx-depl-86b6cbfcbd-xgpkx
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.64.2
+Start Time:   Mon, 01 Nov 2021 22:57:52 +0300
+Labels:       app=nginx-depl
+              pod-template-hash=86b6cbfcbd
+Annotations:  <none>
+Status:       Pending
+IP:           172.17.0.3
+IPs:
+  IP:           172.17.0.3
+Controlled By:  ReplicaSet/nginx-depl-86b6cbfcbd
+Containers:
+  ninnx:
+    Container ID:   
+    Image:          ninnx
+    Image ID:       
+    Port:           <none>
+    Host Port:      <none>
+    State:          Waiting
+      Reason:       ErrImagePull
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qrnbx (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-qrnbx:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                   From               Message
+  ----     ------     ----                  ----               -------
+  Normal   Scheduled  33m                   default-scheduler  Successfully assigned default/nginx-depl-86b6cbfcbd-xgpkx to minikube
+  Normal   Pulling    31m (x4 over 33m)     kubelet            Pulling image "ninnx"
+  Warning  Failed     31m (x4 over 33m)     kubelet            Failed to pull image "ninnx": rpc error: code = Unknown desc = Error response from daemon: pull access denied for ninnx, repository does not exist or may require 'docker login': denied: requested access to the resource is denied
+  Warning  Failed     31m (x4 over 33m)     kubelet            Error: ErrImagePull
+  Warning  Failed     31m (x6 over 33m)     kubelet            Error: ImagePullBackOff
+  Normal   BackOff    3m3s (x125 over 33m)  kubelet            Back-off pulling image "ninnx"
+Apples-MacBook:~ apple$ kubectl logs
+error: expected 'logs [-f] [-p] (POD | TYPE/NAME) [-c CONTAINER]'.
+POD or TYPE/NAME is a required argument for the logs command
+See 'kubectl logs -h' for help and examples
+Apples-MacBook:~ apple$ kubectl log
+Error: unknown command "log" for "kubectl"
+
+Did you mean this?
+	top
+	logs
+
+Run 'kubectl --help' for usage.
+Apples-MacBook:~ apple$ kubectl logs mongo-depl-5fd6b7d4b4-dxbfx
+{"t":{"$date":"2021-11-01T20:30:38.021+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"-","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+{"t":{"$date":"2021-11-01T20:30:38.029+00:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"-","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":13},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":13},"outgoing":{"minWireVersion":0,"maxWireVersion":13},"isInternalClient":true}}}
+{"t":{"$date":"2021-11-01T20:30:38.037+00:00"},"s":"W",  "c":"ASIO",     "id":22601,   "ctx":"main","msg":"No TransportLayer configured during NetworkInterface startup"}
+{"t":{"$date":"2021-11-01T20:30:38.039+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"main","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+{"t":{"$date":"2021-11-01T20:30:38.050+00:00"},"s":"W",  "c":"ASIO",     "id":22601,   "ctx":"main","msg":"No TransportLayer configured during NetworkInterface startup"}
+{"t":{"$date":"2021-11-01T20:30:38.051+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationDonorService","ns":"config.tenantMigrationDonors"}}
+{"t":{"$date":"2021-11-01T20:30:38.052+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"main","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationRecipientService","ns":"config.tenantMigrationRecipients"}}
+{"t":{"$date":"2021-11-01T20:30:38.054+00:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"mongo-depl-5fd6b7d4b4-dxbfx"}}
+{"t":{"$date":"2021-11-01T20:30:38.054+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"5.0.3","gitVersion":"657fea5a61a74d7a79df7aff8e4bcf0bc742b748","openSSLVersion":"OpenSSL 1.1.1f  31 Mar 2020","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu2004","distarch":"x86_64","target_arch":"x86_64"}}}}
+{"t":{"$date":"2021-11-01T20:30:38.055+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"20.04"}}}
+{"t":{"$date":"2021-11-01T20:30:38.057+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"*"}}}}
+{"t":{"$date":"2021-11-01T20:30:38.060+00:00"},"s":"I",  "c":"STORAGE",  "id":22297,   "ctx":"initandlisten","msg":"Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem","tags":["startupWarnings"]}
+{"t":{"$date":"2021-11-01T20:30:38.061+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=555M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress,compact_progress],"}}
+{"t":{"$date":"2021-11-01T20:30:39.389+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1635798639:389313][1:0x7f2629443c80], txn-recover: [WT_VERB_RECOVERY | WT_VERB_RECOVERY_PROGRESS] Set global recovery timestamp: (0, 0)"}}
+{"t":{"$date":"2021-11-01T20:30:39.389+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1635798639:389476][1:0x7f2629443c80], txn-recover: [WT_VERB_RECOVERY | WT_VERB_RECOVERY_PROGRESS] Set global oldest timestamp: (0, 0)"}}
+{"t":{"$date":"2021-11-01T20:30:39.404+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":1342}}
+{"t":{"$date":"2021-11-01T20:30:39.404+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+{"t":{"$date":"2021-11-01T20:30:39.445+00:00"},"s":"I",  "c":"STORAGE",  "id":4366408, "ctx":"initandlisten","msg":"No table logging settings modifications are required for existing WiredTiger tables","attr":{"loggingEnabled":true}}
+{"t":{"$date":"2021-11-01T20:30:39.445+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+{"t":{"$date":"2021-11-01T20:30:39.454+00:00"},"s":"W",  "c":"CONTROL",  "id":22120,   "ctx":"initandlisten","msg":"Access control is not enabled for the database. Read and write access to data and configuration is unrestricted","tags":["startupWarnings"]}
+{"t":{"$date":"2021-11-01T20:30:39.468+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"initandlisten","msg":"createCollection","attr":{"namespace":"admin.system.version","uuidDisposition":"provided","uuid":{"uuid":{"$uuid":"a6434118-ac72-4899-938e-6ecc2072e8e2"}},"options":{"uuid":{"$uuid":"a6434118-ac72-4899-938e-6ecc2072e8e2"}}}}
+{"t":{"$date":"2021-11-01T20:30:39.490+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"initandlisten","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"admin.system.version","index":"_id_","commitTimestamp":null}}
+{"t":{"$date":"2021-11-01T20:30:39.494+00:00"},"s":"I",  "c":"REPL",     "id":20459,   "ctx":"initandlisten","msg":"Setting featureCompatibilityVersion","attr":{"newVersion":"5.0"}}
+{"t":{"$date":"2021-11-01T20:30:39.494+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":13},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":13},"outgoing":{"minWireVersion":0,"maxWireVersion":13},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":13},"incomingInternalClient":{"minWireVersion":13,"maxWireVersion":13},"outgoing":{"minWireVersion":13,"maxWireVersion":13},"isInternalClient":true}}}
+{"t":{"$date":"2021-11-01T20:30:39.498+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":13},"incomingInternalClient":{"minWireVersion":13,"maxWireVersion":13},"outgoing":{"minWireVersion":13,"maxWireVersion":13},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":13},"incomingInternalClient":{"minWireVersion":13,"maxWireVersion":13},"outgoing":{"minWireVersion":13,"maxWireVersion":13},"isInternalClient":true}}}
+{"t":{"$date":"2021-11-01T20:30:39.498+00:00"},"s":"I",  "c":"STORAGE",  "id":5071100, "ctx":"initandlisten","msg":"Clearing temp directory"}
+{"t":{"$date":"2021-11-01T20:30:39.499+00:00"},"s":"I",  "c":"CONTROL",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+{"t":{"$date":"2021-11-01T20:30:39.507+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
+{"t":{"$date":"2021-11-01T20:30:39.507+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"initandlisten","msg":"createCollection","attr":{"namespace":"local.startup_log","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"0671ef77-fcb5-42bd-86f0-de2f1f127d6b"}},"options":{"capped":true,"size":10485760}}}
+{"t":{"$date":"2021-11-01T20:30:39.533+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"initandlisten","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"local.startup_log","index":"_id_","commitTimestamp":null}}
+{"t":{"$date":"2021-11-01T20:30:39.550+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+{"t":{"$date":"2021-11-01T20:30:39.550+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
+{"t":{"$date":"2021-11-01T20:30:39.551+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+{"t":{"$date":"2021-11-01T20:30:39.595+00:00"},"s":"I",  "c":"STORAGE",  "id":20320,   "ctx":"LogicalSessionCacheRefresh","msg":"createCollection","attr":{"namespace":"config.system.sessions","uuidDisposition":"generated","uuid":{"uuid":{"$uuid":"aae2ea46-9065-4a9a-88d0-389ed3bc1074"}},"options":{}}}
+{"t":{"$date":"2021-11-01T20:30:39.596+00:00"},"s":"I",  "c":"CONTROL",  "id":20712,   "ctx":"LogicalSessionCacheReap","msg":"Sessions collection is not set up; waiting until next sessions reap interval","attr":{"error":"NamespaceNotFound: config.system.sessions does not exist"}}
+{"t":{"$date":"2021-11-01T20:30:39.657+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"LogicalSessionCacheRefresh","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"config.system.sessions","index":"_id_","commitTimestamp":null}}
+{"t":{"$date":"2021-11-01T20:30:39.658+00:00"},"s":"I",  "c":"INDEX",    "id":20345,   "ctx":"LogicalSessionCacheRefresh","msg":"Index build: done building","attr":{"buildUUID":null,"namespace":"config.system.sessions","index":"lsidTTLIndex","commitTimestamp":null}}
+{"t":{"$date":"2021-11-01T20:31:39.463+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":"[1635798699:463830][1:0x7f2620c31700], WT_SESSION.checkpoint: [WT_VERB_CHECKPOINT_PROGRESS] saving checkpoint snapshot min: 34, snapshot max: 34 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 1"}}
+{"t":{"$date":"2021-11-01T20:32:39.498+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":"[1635798759:497940][1:0x7f2620c31700], WT_SESSION.checkpoint: [WT_VERB_CHECKPOINT_PROGRESS] saving checkpoint snapshot min: 37, snapshot max: 37 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 1"}}
+{"t":{"$date":"2021-11-01T20:33:39.520+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":"[1635798819:520918][1:0x7f2620c31700], WT_SESSION.checkpoint: [WT_VERB_CHECKPOINT_PROGRESS] saving checkpoint snapshot min: 39, snapshot max: 39 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 1"}}
+Apples-MacBook:~ apple$ kubectl get pod
+NAME                          READY   STATUS             RESTARTS   AGE
+mongo-depl-5fd6b7d4b4-dxbfx   1/1     Running            0          5m34s
+nginx-depl-86b6cbfcbd-xgpkx   0/1     ImagePullBackOff   0          37m
+Apples-MacBook:~ apple$ kubectl exec -it mongo-depl-5fd6b7d4b4-dxbfx
+error: you must specify at least one command for the container
+Apples-MacBook:~ apple$ kubectl exec -it mongo-depl-5fd6b7d4b4-dxbfx --bin/bash
+Error: unknown flag: --bin/bash
+See 'kubectl exec --help' for usage.
+Apples-MacBook:~ apple$ kubectl exec -it mongo-depl-5fd6b7d4b4-dxbfx -- bin/bash
+root@mongo-depl-5fd6b7d4b4-dxbfx:/# exit
+exit
+Apples-MacBook:~ apple$ kubectl get deployment
+NAME         READY   UP-TO-DATE   AVAILABLE   AGE
+mongo-depl   1/1     1            1           8m43s
+nginx-depl   0/1     1            0           40m
+Apples-MacBook:~ apple$ 
